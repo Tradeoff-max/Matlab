@@ -1,0 +1,18 @@
+当前对Larm矩阵中的坐标点进行提取和扩展，已经符合surf中的单位球面矩阵的维度，只在Larm中运行可以达到设定半径和运动  
+但还不可以实现跟随取代左臂的运动。
+在整体人体骨骼中运行，则出现bug，并且球消失。
+推测问题出现在getframe中
+
+‘此类型的变量不支持使用点进行索引。
+
+出错 alternateGetframe
+
+出错 getframe (line 133)
+x = alternateGetframe(parentFig, offsetRect, scaledOffsetRect,
+includeDecorations);
+
+出错 dongtu (line 99)
+    m(cnt)=getframe;
+ 
+>> ’
+下一步解决此问题 或者更换思路
